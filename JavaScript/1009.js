@@ -5,3 +5,4 @@ var SALARIO = parseFloat(valores.shift());
 var VENDAS = parseFloat(valores.shift());
 var TOTAL = (SALARIO + VENDAS*0.15).toFixed(2)
 console.log("TOTAL = R$ " + TOTAL);
+
