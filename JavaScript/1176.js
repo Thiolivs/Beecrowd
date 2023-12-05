@@ -7,15 +7,14 @@ for(let i=0; i<N; i++){
     if (F===1)
         console.log("Fib(1) = 1")
    else {
-    let R=0
-    let R2=1
+    let anterior=0
+    let proximo=1
     let Soma = 0
    for(let j=0; j<F-1; j++){
-    Soma = R + R2
-    R=R2
-    R2=Soma
+    Soma = anterior + proximo
+    anterior=proximo
+    proximo=Soma
     }
-    
     console.log(`Fib(${F}) = ${Soma}`)
     }
 }
